@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 25 19:46:24 2024
+# Process ID: 29424
+# Current directory: E:/STM32SSC/FPGA/Code/1_LED_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20828 E:\STM32SSC\FPGA\Code\1_LED_Demo\1_LED_Demo.xpr
+# Log file: E:/STM32SSC/FPGA/Code/1_LED_Demo/vivado.log
+# Journal file: E:/STM32SSC/FPGA/Code/1_LED_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports key M14
+place_ports led M15
+place_ports key N15
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/led.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/led.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

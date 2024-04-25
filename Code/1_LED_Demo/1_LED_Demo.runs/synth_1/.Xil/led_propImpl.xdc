@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc rfile:../../../1_LED_Demo.srcs/constrs_1/new/led.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N15 [get_ports key]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M15 [get_ports led]

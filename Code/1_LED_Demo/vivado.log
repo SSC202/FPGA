@@ -1,0 +1,197 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 25 19:46:24 2024
+# Process ID: 29424
+# Current directory: E:/STM32SSC/FPGA/Code/1_LED_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20828 E:\STM32SSC\FPGA\Code\1_LED_Demo\1_LED_Demo.xpr
+# Log file: E:/STM32SSC/FPGA/Code/1_LED_Demo/vivado.log
+# Journal file: E:/STM32SSC/FPGA/Code/1_LED_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: led
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1686.520 ; gain = 245.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'led' [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (1#1) [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/sources_1/new/led.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1738.191 ; gain = 296.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1738.191 ; gain = 296.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1738.191 ; gain = 296.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1764.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1888.492 ; gain = 446.992
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.492 ; gain = 714.977
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Thu Apr 25 19:49:33 2024] Launched synth_1...
+Run output will be captured here: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.453 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: led
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2428.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'led' [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (1#1) [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/sources_1/new/led.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2428.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2428.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2428.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2428.492 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.srcs/constrs_1/new/led.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2428.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2428.492 ; gain = 0.000
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+place_ports key M14
+place_ports led M15
+place_ports key N15
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Thu Apr 25 19:55:59 2024] Launched synth_1...
+Run output will be captured here: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+[Thu Apr 25 19:56:27 2024] Launched impl_1...
+Run output will be captured here: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.070 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2467.070 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2467.070 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Apr 25 19:57:10 2024] Launched impl_1...
+Run output will be captured here: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2469.031 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/led.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/impl_1/led.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 19:59:09 2024...

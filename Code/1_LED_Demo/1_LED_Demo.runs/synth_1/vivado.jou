@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 25 19:56:01 2024
+# Process ID: 2268
+# Current directory: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1
+# Command line: vivado.exe -log led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led.tcl
+# Log file: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1/led.vds
+# Journal file: E:/STM32SSC/FPGA/Code/1_LED_Demo/1_LED_Demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source led.tcl -notrace
