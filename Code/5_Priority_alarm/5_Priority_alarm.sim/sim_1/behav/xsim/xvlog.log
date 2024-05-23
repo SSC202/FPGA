@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STM32SSC/FPGA/Code/5_Priority_alarm/5_Priority_alarm.srcs/sources_1/new/priority_alarm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_alarm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STM32SSC/FPGA/Code/5_Priority_alarm/5_Priority_alarm.srcs/sim_1/new/priority_alarm_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_alarm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STM32SSC/FPGA/Code/5_Priority_alarm/5_Priority_alarm.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

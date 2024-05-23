@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 90 ns : File "E:/STM32SSC/FPGA/Code/5_Priority_alarm/5_Priority_alarm.srcs/sim_1/new/priority_alarm_test.v" Line 55
