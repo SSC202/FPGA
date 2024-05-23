@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/STM32SSC/FPGA/Code/2_Decoder_Demo/2_Decoder_Demo.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/STM32SSC/FPGA/Code/2_Decoder_Demo/2_Decoder_Demo.srcs/sim_1/new/decode_test.v,1716388497,verilog,,,,decode_test,,,,,,,,
+E:/STM32SSC/FPGA/Code/2_Decoder_Demo/2_Decoder_Demo.srcs/sources_1/new/decoder.v,1716388207,verilog,,E:/STM32SSC/FPGA/Code/2_Decoder_Demo/2_Decoder_Demo.srcs/sim_1/new/decode_test.v,,decoder,,,,,,,,
